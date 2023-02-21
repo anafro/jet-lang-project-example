@@ -20,7 +20,7 @@ Class Application Is App
 
 	Function Construct() Returns Nothing
 		Text Message = Input:Get()
-		Output:Write(Message.Capitalized())
+		Output:Write(Message.Capitalized().Reversed())
 
 
 	Function When-Crashed(Crash_Report Jet/Crash-Report)
