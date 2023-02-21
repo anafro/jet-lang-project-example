@@ -1,6 +1,0 @@
-Use Jet:App
-
-Class ApplicationLibraries Is Libraries
-	List = [
-		"Jet"
-	]
