@@ -1,0 +1,17 @@
+Use Jet:Config
+Use Jet:Text
+
+
+
+
+
+Class Config Is Config
+	Name = 'Hello World'
+	Author = 'Anatoly Frolov'
+	Email = 'contact@anafro.ru'
+
+	Description = Text:Multiline(
+		'Welcome to Jet!',
+		'',
+		'This is your first application, which prints Hello world!',
+	)

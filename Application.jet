@@ -1,0 +1,29 @@
+Use Jet:Input
+Use Jet:Output
+Use Jet:App
+Use Jet:File
+Use Jet:Time
+Use Jet:Reflection
+Use Jet:Experimental:Crash-Reports
+
+
+
+
+
+| This is an example application of Jet
+Class Application Is App
+	Name = "Unnamed Jet Application"
+
+
+
+
+
+	Function Construct() Returns Nothing
+		Text Message = Input:Get()
+		Output:Write(Message.Capitalized())
+
+
+	Function When-Crashed(Crash_Report Jet/Crash-Report)
+		Text Crash-Report-Message = Crash-Report.Stringify(Drop-Stack-Trace = True)
+		Output:Write(Crash-Report-Message)
+		File:Write('crash-report-# Time:Now(With-Milliseconds = True) #.txt');
