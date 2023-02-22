@@ -1,8 +1,8 @@
-Use Jet:Time
+use jet:time
 
 
 
 
-Class Shop
-    Name = 'Banana Inc. Glosery Store'
-    Work-Time = Day-Period:Construct(12.00, 16.50) 
+class shop
+    name = 'Banana Inc. Glosery Store'
+    work-time = day-period:construct(12.00, 16.50) 
