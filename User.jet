@@ -1,0 +1,18 @@
+Use Jet:Text
+
+
+
+
+Structure User
+	Text Name
+	Text Email
+	Text Password
+
+	Function Construct() Returns User
+		No-Code
+
+	Function Say-Hello(Another-User Is User) Returns Nothing
+		Output:Write('Hello, #Another-User:GetName()#')
+
+	Function User:Get-Creditals() Returns Text
+		Return '#Name, #Email'
