@@ -5,6 +5,7 @@ Use Jet:File
 Use Jet:Time
 Use Jet:Reflection
 Use Jet:Experimental:Crash-Reports
+Use Jet:Math
 
 
 
@@ -30,3 +31,15 @@ Class Application Is App
 		Text Crash-Report-Message = Crash-Report.Stringify(Drop-Stack-Trace = True)
 		Output:Write(Crash-Report-Message)
 		File:Write('crash-report-# Time:Now(With-Milliseconds = True) #.txt');
+
+
+	
+	Function Do-Math() Returns Int
+		Int First-Number = Input:Int('Enter the first number, please')
+		Int Second-Number = Input:Int('And the second one')
+
+		Int Sum = First-Number + Second-Number
+
+		Output:Write('#First-Number + #Second-Number = #Sum')
+
+		Return Sum
