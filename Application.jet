@@ -21,6 +21,9 @@ Class Application Is App
 	Function Construct() Returns Nothing
 		Text Message = Input:Get()
 		Output:Write(Message.Capitalized().Reversed())
+		Output:Write('Exit...')
+		Application.Exit(Status = 0)
+		
 
 
 	Function When-Crashed(Crash_Report Jet/Crash-Report)
